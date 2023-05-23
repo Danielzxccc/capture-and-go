@@ -56,7 +56,7 @@ authRouter.delete('/logout', async (req: CustomRequest, res: Response) => {
       if (err) {
         res.status(400).json({ message: 'unable to logout' })
       } else {
-        res.status(200).json({ message: 'logout successfully' })
+        res.status(200).json({ message: 'Logout successfully' })
       }
     })
   }
