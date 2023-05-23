@@ -22,7 +22,7 @@ export async function sendInvoice(
   schedule: Schedule
 ) {
   await transporter.sendMail({
-    from: 'danie.araojo022@gmail.com',
+    from: process.env.EMAIL,
     to: toEmail,
     subject: 'Your invoice',
     html: `
